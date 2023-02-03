@@ -1,0 +1,16 @@
+1st joke option: // ...walks in a bar
+
+[number] [thing] walk into a bar.
+The first one says: [thing-first-says].
+The second one says: [thing-second-says].
+...
+The [n] one says: [thing-n-one-says].
+The bartender says: [thing that bartenders say].
+
+2nd joke option: // ... how do you call 
+
+How do you call [a thing] that [does smth]?
+[a way you call smth].
+
+3rd joke option:
+[smth] is way better when you add [smth-you-add].
