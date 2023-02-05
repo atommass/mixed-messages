@@ -9,19 +9,52 @@ const randomNumToFive = () => {
 
 // returns the name of random number
 const randomNoNamer = () => {
-    randomThingNo = randomNumToFive();
-    switch (randomThingNo) {
-        case 1: 
-            return 'One';
-        case 2: 
-            return 'Two';
-        case 3: 
-            return 'Three';
-        case 4: 
-            return 'Four';
-        case 5: 
-            return 'Five';
+    randomNo = randomNumToFive();
+    switch (randomNo) {
+        case 1: return 'One';
+        case 2: return 'Two';
+        case 3: return 'Three';
+        case 4: return 'Four';
+        case 5: return 'Five';
     }
 }
 
-console.log(randomNoNamer());
+// 
+const generateRandomThing = randNoName => {
+    randomThingNo = randomNumToFive();
+    switch (randomThingNo) {
+        case 1:
+            if (randNoName === 'One') {
+                return `${randNoName} Vampire`;
+            } else {
+                return `${randNoName} Vampires`;
+            }
+        case 2:
+            if (randNoName === 'One') {
+                return `${randNoName} Jew`;
+            } else {
+                return `${randNoName} Jews`;
+            }
+        case 3:
+            if (randNoName === 'One') {
+                return `${randNoName} Bartender`;
+            } else {
+                return `${randNoName} Bartenders`;
+            }
+        case 4: 
+            if (randNoName === 'One') {
+                return `${randNoName} Horse`;
+            } else {
+                return `${randNoName} Horses`;
+            }
+        case 5:
+            if (randNoName === 'One') {
+                return `${randNoName} Programmer`;
+            } else {
+                return `${randNoName} Programmers`;
+            }
+    }
+} 
+for (let i = 0; i < 15; i++) {
+    console.log(generateRandomThing(randomNoNamer()));
+}
